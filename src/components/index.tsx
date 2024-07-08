@@ -1,11 +1,11 @@
 'use client'
 import { API_URLS } from '@/helpers/api';
-import { fetchData } from '@/helpers/constants';
 import { Coin } from '@/interfaces';
 import { Table, Pagination, Select } from 'antd';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { typeOfMony, typeOfRange } from '@/interfaces';
+import { fetchData } from '@/helpers/services';
 
 export interface IContentProps {
   coin: Coin[];
